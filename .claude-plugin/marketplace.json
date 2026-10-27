@@ -1,0 +1,39 @@
+{
+  "name": "codeqian-skills",
+  "owner": {
+    "name": "codeqian"
+  },
+  "metadata": {
+    "description": "Agent skills distilled from real development problems",
+    "version": "0.2.0"
+  },
+  "plugins": [
+    {
+      "name": "careful-review",
+      "description": "Full five-step recheck before claiming a change is done",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/careful-review"
+      ]
+    },
+    {
+      "name": "db-safety",
+      "description": "Database red lines: never production, never destructive DDL, confirm every write",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/db-safety"
+      ]
+    },
+    {
+      "name": "secret-hygiene",
+      "description": "Handle credentials without reading, storing, or echoing them",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/secret-hygiene"
+      ]
+    }
+  ]
+}
