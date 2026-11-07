@@ -2,6 +2,12 @@
 
 All notable changes to this repository are recorded here.
 
+## [0.3.0] - 2026-11-07
+
+### Changed
+
+- `skills/careful-review` — added verification tiers (default / static / single round / loop) and a loop-until-clean protocol; skill version 1.1.0.
+
 ## [0.2.0] - 2026-10-27
 
 ### Added

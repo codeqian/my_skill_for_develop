@@ -5,12 +5,12 @@
   },
   "metadata": {
     "description": "Agent skills distilled from real development problems",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "plugins": [
     {
       "name": "careful-review",
-      "description": "Full five-step recheck before claiming a change is done",
+      "description": "Tiered recheck with five evidence steps, plus loop-until-clean mode",
       "source": "./",
       "strict": false,
       "skills": [
