@@ -2,6 +2,18 @@
 
 All notable changes to this repository are recorded here.
 
+## [0.4.1] - 2026-11-10
+
+### Changed
+
+- `skills/requirement-to-test-cases` — replaced business-specific examples with domain-neutral ones, added English trigger text; skill version 1.1.0.
+
+## [0.4.0] - 2026-11-10
+
+### Added
+
+- `skills/requirement-to-test-cases` — turn requirement documents into traceable acceptance points and layered test cases, with a data-availability audit.
+
 ## [0.3.0] - 2026-11-07
 
 ### Changed

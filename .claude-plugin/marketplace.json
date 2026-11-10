@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "Agent skills distilled from real development problems",
-    "version": "0.3.0"
+    "version": "0.4.1"
   },
   "plugins": [
     {
@@ -33,6 +33,15 @@
       "strict": false,
       "skills": [
         "./skills/secret-hygiene"
+      ]
+    },
+    {
+      "name": "requirement-to-test-cases",
+      "description": "Requirement docs to traceable acceptance points and layered test cases, with data-availability audits",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/requirement-to-test-cases"
       ]
     }
   ]

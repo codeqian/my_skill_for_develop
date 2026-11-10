@@ -11,6 +11,7 @@ The library grows as I work: new skills are added when a new failure mode shows 
 | [careful-review](skills/careful-review/SKILL.md) | A change is "done" and needs a full recheck — compile, tests, independent recomputation, boundary table, cross-end alignment — instead of a diff review; loops until the local defect count is zero when asked for cyclic testing |
 | [db-safety](skills/db-safety/SKILL.md) | Touching a database, schema, migration, or data fix — read-only first, confirm every write, never destructive DDL |
 | [secret-hygiene](skills/secret-hygiene/SKILL.md) | Handling keys, tokens, certificates, or credential files — never read, store, or echo the value |
+| [requirement-to-test-cases](skills/requirement-to-test-cases/SKILL.md) | Turning a requirement doc into traceable acceptance points and layered, executable test cases — including data-availability audits |
 
 ## Structure
 
@@ -68,6 +69,7 @@ Work in progress. Expect additions and revisions.
 | [careful-review](skills/careful-review/SKILL.md) | 改动“做完了”需要全量复查时——编译、测试、独立复算、边界枚举、跨端对齐，而不是只看 diff；说「执行循环测试」时反复整轮直到本端缺陷为 0 |
 | [db-safety](skills/db-safety/SKILL.md) | 要连库、改表、跑迁移或修数据时——只读优先、写前确认、禁止破坏表结构 |
 | [secret-hygiene](skills/secret-hygiene/SKILL.md) | 处理密钥、token、证书或凭据文件时——不读正文、不落盘、不回显 |
+| [requirement-to-test-cases](skills/requirement-to-test-cases/SKILL.md) | 把需求文档拆成验收点和分层测试用例，并审计数据可用性时 |
 
 ## 目录结构
 
