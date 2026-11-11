@@ -2,6 +2,12 @@
 
 All notable changes to this repository are recorded here.
 
+## [0.4.2] - 2026-11-11
+
+### Changed
+
+- `skills/requirement-to-test-cases` — added mandatory requirement-table column audit, sort-key/derived-value coverage (e.g. average = total ÷ matches), mandatory 5-item checklist for list/ranking features (direction, sort key, null position, cross-page order, regression), falsifiability rule, and requirement-column → AC → TC coverage matrix; skill version **1.2.0**.
+
 ## [0.4.1] - 2026-11-10
 
 ### Changed
