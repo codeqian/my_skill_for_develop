@@ -2,6 +2,12 @@
 
 All notable changes to this repository are recorded here.
 
+## [0.4.3] - 2026-11-24
+
+### Added
+
+- `skills/design-parity-review` — review UI against a design or requirement doc: freeze a design whitelist, audit the implementation for extra decorations, compare real screenshots, and report missing/extra/mismatched elements; explicit point changes bypass the workflow.
+
 ## [0.4.2] - 2026-11-11
 
 ### Changed
