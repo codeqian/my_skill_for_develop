@@ -1,6 +1,6 @@
 ---
 name: design-parity-review
-description: Review a UI implementation against a design reference or a requirement/development document, and report missing, extra, or mismatched elements. Use when the user says "对照设计稿/效果图检查", "按需求文档/开发文档开发", "核对页面还原", "visual parity review", or "design QA". Do not use for explicit point changes such as changing one color, deleting one divider, or changing one font size; implement those directly with minimal checks.
+description: Review a UI implementation against a design reference or a requirement/development document, and report missing, extra, or mismatched elements. Use when the user says "对照设计稿/效果图检查", "按需求文档/开发文档开发", "核对页面还原", "visual parity review", or "design QA". Supports review-only mode when the user says "只检查/先别改/只列问题". Do not use for explicit point changes such as changing one color, deleting one divider, or changing one font size; implement those directly with minimal checks.
 ---
 
 # Design parity review
@@ -22,6 +22,24 @@ Do not use this skill when the user gives an explicit point change, for example:
 - "把这个图标放到右边"
 
 For those requests, implement only the stated change. Do not add decorations, do not widen the scope, and do not run the full design-parity workflow.
+
+## Review-only mode
+
+When the user says any of:
+
+- "只检查" / "先别改" / "只列问题"
+- "先不修改" / "不要动代码"
+- "review only"
+
+then the whole turn is read-only:
+
+1. Do not edit, format, rename, or delete code.
+2. Do not apply fixes, even when the defect is obvious or the fix is one line.
+3. Read-only inspection, lint/type checks, tests, and screenshots are allowed.
+4. Report each issue with its location, design reference, current behavior, and a suggested fix.
+5. Stop and wait for explicit approval before modifying anything.
+
+A review-only request is not permission to fix, even if the user's wording suggests that fixing would be helpful while you are there.
 
 ## Inputs
 
@@ -222,3 +240,4 @@ Rules:
 - No secrets, credentials, customer names, private URLs, or absolute home paths in reports or files.
 - If a visual comparison cannot be performed, report it as blocked; never fabricate evidence.
 - Explicit point changes override this workflow: implement them directly and keep checks minimal.
+- A review ends at the report: modify code only when the user explicitly asks for a fix; finding a defect is not permission to edit.

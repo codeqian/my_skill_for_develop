@@ -2,6 +2,12 @@
 
 All notable changes to this repository are recorded here.
 
+## [0.4.4] - 2026-11-24
+
+### Changed
+
+- `skills/design-parity-review` — added a review-only mode (只检查 / 先别改 / 只列问题 / 不要动代码 / review only) that keeps the whole turn read-only, plus a global rule that a review ends at the report unless a fix was explicitly requested.
+
 ## [0.4.3] - 2026-11-24
 
 ### Added
